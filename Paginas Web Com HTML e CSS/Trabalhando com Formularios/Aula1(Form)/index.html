@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Cadastro</title>
+</head>
+<body>
+    <!--Tag para semantica para indicar que é um formulario-->
+    <form name="singup" action="https://meusite.com.br/singup" method="POST" autocomplete="on" onsubmit="alert ('Formulario enviado')">
+
+        <!--atributo action vai direcionar o formulario para algum lugar-->
+
+        <!--o atributo method seria por qual meio que aquelas informações vão ser enviadas, GET > menos segura; POST > mais seguro pois ele manda para o banco de dados-->
+
+        <!--o atributo autocomplete seria para deixar as informções que voce inserio antes, continuarem la.-->
+
+        <!--O on(evento) é muito usado em conjunto com o javascript.-->
+
+        Nome: <input type="text" name="name">
+        <!--no atributo name, vamos pegar a instancia para validadar depois.-->
+        Idade: <input type="number" name="age">
+        Senha: <input type="password" name="password">
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
