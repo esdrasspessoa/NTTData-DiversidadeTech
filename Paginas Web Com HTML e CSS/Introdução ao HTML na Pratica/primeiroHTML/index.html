@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Página - Módulo I - Primeiros Passos com HTML</title>
+        <style>
+            h2, h4 {
+                margin-bottom: 0;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1 id="inicio">DOCUMENTO <abbr title="HyperText Markup Language">HTML</abbr></h1>
+        <hr /> <!--Adiciona uma linha-->
+
+        <h2>Índice</h2>
+
+        <ul>
+            <li><a href="#estrura-html">Estrutura básica do HTML?</a></li>
+            <li><a href="#falando-tags">Falando Sobre Tags</a></li>
+            <li><a href="#atributos-tags">Atributos das Tags</a></li>
+            <li><a href="#atributos-tags">Tags Extras</a></li>
+            <li><a href="#listas">Listas</a></li>
+            <li><a href="#links">Links</a></li>
+            <li><a href="#nav-paginas">Navegação entre Páginas</a></li>
+            <li><a href="#referencias">Referências</a></li>
+        </ul>
+
+        <h2 id="estrura-html">Estrutura Básica do HTML</h2>
+        <small><a href="#inicio">Subir</a></small>
+        <p>
+            Um documento HTML válido precisa seguir obrigatoriamente a estrutura composta pelas tags <span><</span>html<span>></span>, <span><</span>head<span>></span> e <span><</span>body<span>></span> e a instrução  <span><</span>!DOCTYPE<span>></span> .
+        </p>
+
+        <h2 id="falando-tags">Falando Sobre Tags</h2>
+        <small><a href="#inicio">Subir</a></small>
+        <p>
+            Existem algumas tagas que geralmente são usadas quando vamos escrever o nosso documento html.
+            <br>
+            Temos a tag <span><</span>p<span>></span> ´que é utilizada para escrevermos paragrafo no documento html.
+            <br>
+            Temos a tag <span><</span><strong>strong</strong><span>></span> que deixa o texto em negrito.
+            <br> 
+            Temos a tag <span><</span><i>i</i><span>></span> que deixa o texto em italico.
+            <br>
+            Temos a tag <span><</span><u>u</u><span>></span> que deixa o texto sublinhado.
+            <br>
+            Temos também a tag <span><</span>img<span>></span> que por sua vez, insere imagens no documento:
+            <br>
+            <span><</span>img src="https://revistacarro.com.br/wp-content/uploads/2021/06/Fiat-Pulse_1.jpg" width="150"<span>></span>
+            <br>
+            <img src="https://revistacarro.com.br/wp-content/uploads/2021/06/Fiat-Pulse_1.jpg" width="150">
+            <br>
+        </p>
+
+       
+        <h4 id="atributos-tags"> - Atributo das Tags</h4>
+        <small><a href="#inicio">Subir</a></small>
+        <p>
+            Existem algumas tags que recebem atributos, ou seja, através de uma regra podemos determinar alguma regra para aquela tag, Ex:
+            <br>
+            <span><</span>input type="text"<span>></span>
+            <br>
+            Esse "type" é um atributo da tag input, que através dele podemos determinar que a regra daquela input será text ou texto.
+        </p>
+
+        <h4 id="tags-extra"> - Tags Extras</h4>
+        <small><a href="#inicio">Subir</a></small>
+        <p>
+            <span><</span>sup<span>></span>
+            é utilizado para escrever um texto com letras menores acima das palavras ou caracteres.
+            <br>
+            <sup>titulo*</sup>
+
+            <br><br>
+
+            <span><</span>blockquote<span>></span>
+            Tag usada para citações, obs, e etc...
+            <br>
+            <blockquote>
+                 <i>Repellat fuga perferendis possimus.</i> 
+            </blockquote>
+
+            <br>
+
+            <span><</span>small<span>></span>
+            <br>
+            Tag usada para criar textos pequenos, simples.
+
+            <br><br>
+
+            <span><</span>font<span>></span>
+            <br>
+            A tag foi usada no HTML 4 para especificar a face da fonte, o tamanho da fonte e a cor do texto.
+
+            <br><br>
+
+            <span><</span>del<span>></span>
+            <br>
+            A tag define o texto que foi excluído de um documento. Os navegadores geralmente riscam uma linha através do texto excluído.
+
+            <br><br>
+
+            <span><</span>abbr title=""</abbr><span>></span>
+            <br>
+            É utilizada para fazer abreviações.
+        </p>
+        
+        <h2 id="listas">Listas</h2> 
+        <small><a href="#inicio">Subir</a></small>
+        <p>
+            Existem dois tipos de listas, as ordenas "ol" e as não ordenadas "ul".
+            <br>
+            <span><</span>ol<span>></span>
+                <br>
+                <span><</span>li<span>></span><span><</span><span>/</span>li<span>></span>
+                <br>
+            <span><</span><span>/</span>ol<span>></span>
+        </p>
+
+        São lista que são sequencias por uma ordem.
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3
+                <ol>
+                    <li>
+                        Item 3.1
+                    </li>
+                    <li>
+                        Item 3.2
+                    </li>
+                </ol>
+            </li>
+        </ol>
+
+        <span><</span>ul<span>></span>
+                <br>
+                <span><</span>li<span>></span><span><</span><span>/</span>li<span>></span>
+                <br>
+            <span><</span><span>/</span>ul<span>></span>
+            <br>
+            <br>
+            São lista que não tem ordenamento, são marcadas pelos bullets points.
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+
+        <h2 id="links">Links</h2>
+        <small><a href="#inicio">Subir</a></small>
+        <p>
+            O Elemento HTML  <span><</span>a<span>></span> especifica as relações entre o documento atual e um recurso externo, ou seja, ele pode nos levar a um determinada pagina extern ou navegar no proprio site.
+            <br>
+            Estrutura:
+            <br>
+            <br>
+            <span><</span>a href="http://dio.me" target="_blank" title="Clique aqui e confira">DIO<span><</span><span>/a</span><span>></span>
+
+            <br><br>
+            Link dentro de uma "ul"
+            <br>
+            <ul>
+                <li>
+                    <a href="http://dio.me" target="_blank" title="Clique aqui e confira">DIO</a>
+                </li>
+            </ul>
+        </p>
+
+        <h4 id="nav-paginas"> - Navegação entre paginas</h4>
+        <small><a href="#inicio">Subir</a></small>
+        <p>
+            Ainda usando a tag "a" é possivel navegar entre as paginas do seu site atraves dos links:
+            <br>
+            <br>
+                <a href="about.html">Sobre</a>
+        </p>
+
+        <h2 id="referencias">Referências</h2>
+        <small><a href="#inicio">Subir</a></small>
+            <blockquote>
+                <i>
+                    <a href="#">https://www.w3schools.com/html/default.asp</a>
+                </i>
+            </blockquote>
+            <blockquote>
+                <i>
+                    <a href="#">https://developer.mozilla.org/pt-BR/docs/Web/HTML</a>
+                </i>
+            </blockquote>
+
+    </body>
+</html>
