@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando Tabelas</title>
+
+    <style>
+        table thead th {
+            background-color: black;
+            color: white;
+        }
+
+        table tfoot td {
+            background-color: gray;
+        }
+
+        table tbody > tr:nth-child(even) td{
+            background-color: #f1f1f1;
+        }
+
+        table tbody > tr:hover td {
+            background-color: #f9f9f9;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <table summary=""  width="250" align="center" cellspacing="0">
+        
+        <caption>Tabela de idade dos alunos</caption>
+        <thead> <!--CABEÇALHO-->
+            <tr>
+                <th colspan="2">Minha Tabela</th>
+            </tr>
+            <tr> <!--linha-->
+                <th>Nome</th><!--colunas, mas th indica que essa coluna é um cabeçalho e é bom pra acessibilidade.-->
+                <th>Idade</th>
+            </tr>
+        </thead>
+        
+        <tbody> <!--CORPO DA TABELA-->
+            <tr>
+                <td>Esdras</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Giselle</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>Tiago</td>
+                <td>24</td>
+            </tr>
+        </tbody>
+
+        <tfoot> <!--RODAPE DA TABELA-->
+            <tr>
+                <td>Total</td>
+                <td>6</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
